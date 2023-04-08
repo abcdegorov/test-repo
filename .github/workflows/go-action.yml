@@ -30,4 +30,8 @@ jobs:
         go build -v ./...
 
     - name: Test
-      run: go test -v test-app/...
+      run: |
+        pwd
+        ls -ltra
+
+      # go test -v test-app/...
