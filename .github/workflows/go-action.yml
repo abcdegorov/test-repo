@@ -31,4 +31,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: go-artifact
-        path: test-results.json
+        path: test-app
