@@ -4,6 +4,10 @@ pipeline {
             label 'docker-buildagent-tmpl'
         }
     }
+    triggers {
+        pollSCM 'H/5 * * * *'
+    }
+    stages {
         stage('Stage1') {
             steps {
                 sh '''
