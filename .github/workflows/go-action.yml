@@ -25,6 +25,8 @@ jobs:
       run: |
         pwd
         ls -ltra
+        cd test-app/
+        ls -ltra
         go build -v ./...
 
     - name: Test
